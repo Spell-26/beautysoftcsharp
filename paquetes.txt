@@ -1,0 +1,5 @@
+entitiframeworkCore.sqlserver
+entitiframeworkCore.tools
+
+
+Scaffold-DbContext "server=localhost; database=beautysoftnet; integrated security=true; Encrypt = False" Microsoft.EntityFrameworkCore.SqlServer -OutPutDir Models
