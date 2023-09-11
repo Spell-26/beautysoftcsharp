@@ -1,59 +1,49 @@
 ﻿@model IEnumerable<beautysoft.Models.Citas>
 
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "Citas | Beautysoft";
 }
 
-<h1>Index</h1>
+<h1>Citas</h1>
 
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
-<table class="table">
-    <thead>
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.Fecha)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Hora)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.IdClienteNavigation)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.IdEstilistaNavigation)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.IdServicioNavigation)
-            </th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Fecha)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Hora)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.IdClienteNavigation.IdCliente)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.IdEstilistaNavigation.IdEstilista)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.IdServicioNavigation.IdServicio)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.IdCita">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.IdCita">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.IdCita">Delete</a>
-            </td>
-        </tr>
-}
-    </tbody>
-</table>
+<div class="container-boton">
+    <a class="boton-funcional" asp-action="Create">Nueva cita</a>
+</div>
+<div class="container-cita">
+    @foreach (var item in Model) {
+    <div class="card-cita">
+        <div class="card-head">
+            <h3 class="text-head-card">
+                    Cita de: 
+            </h3>
+                <h3>@Html.DisplayFor(modelItem => item.ClienteNombre)</h3>
+        </div>
+        <div class="datos">
+            <ul class="datos-cita">
+                <li>
+                        <span><i class="fa-solid fa-scissors" style="color: #ffffff;"></i> Estilista: @Html.DisplayFor(modelItem => item.EstilistaNombre)</span>
+                </li>
+                <li>
+                        <span><i class="fa-solid fa-check" style="color: #ffffff;"></i> Servicio: @Html.DisplayFor(modelItem => item.ServicioNombre)</span>
+                </li>
+                <li>
+                    <span><i class="fa-solid fa-money-bill" style="color: #ffffff;"></i> Valor aprox: @item.Precio</span>
+                </li>
+                <li>
+                        <span><i class="fa-solid fa-calendar-days" style="color: #ffffff;"></i> Fecha: @item.Fecha </span>
+                </li>
+                <li>
+                        <span><i class="fa-solid fa-bell" style="color: #ffffff;"></i> Hora: @Html.DisplayFor(modelItem => item.Hora)</span>
+                </li>
+            </ul>
+        </div>
+        <footer class="card-foot">
+                <a asp-action="Edit" asp-route-id="@item.IdCita">Editar</a>
+                <a asp-action="Details" asp-route-id="@item.IdCita">Detalles</a>
+                <a asp-action="Delete" asp-route-id="@item.IdCita">Eliminar</a>
+        </footer>
+    </div>
+    }
+</div>
+
+

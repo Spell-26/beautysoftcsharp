@@ -5,6 +5,10 @@
       "PackagePath": "staticwebassets\\beautysoft.bundle.scp.css"
     },
     {
+      "Id": "D:\\dev\\sena\\c#\\beautysoftcsharp\\beautysoft\\beautysoft\\wwwroot\\css\\citas.css",
+      "PackagePath": "staticwebassets\\css\\citas.css"
+    },
+    {
       "Id": "D:\\dev\\sena\\c#\\beautysoftcsharp\\beautysoft\\beautysoft\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },

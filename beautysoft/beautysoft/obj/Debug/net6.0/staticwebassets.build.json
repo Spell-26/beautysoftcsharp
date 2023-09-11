@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "GMprG0+hZjeEgmRcaJF/SA7qkmXLatRZ89yz1LJNhDA=",
+  "Hash": "Pr/SdDg4suk+CwxkQjzQbaz+gHqZUwVDUs0VAIbuZEo=",
   "Source": "beautysoft",
   "BasePath": "_content/beautysoft",
   "Mode": "Default",
@@ -49,6 +49,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "D:\\dev\\sena\\c#\\beautysoftcsharp\\beautysoft\\beautysoft\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\beautysoft.bundle.scp.css"
+    },
+    {
+      "Identity": "D:\\dev\\sena\\c#\\beautysoftcsharp\\beautysoft\\beautysoft\\wwwroot\\css\\citas.css",
+      "SourceId": "beautysoft",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\dev\\sena\\c#\\beautysoftcsharp\\beautysoft\\beautysoft\\wwwroot\\",
+      "BasePath": "_content/beautysoft",
+      "RelativePath": "css/citas.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\citas.css"
     },
     {
       "Identity": "D:\\dev\\sena\\c#\\beautysoftcsharp\\beautysoft\\beautysoft\\wwwroot\\css\\site.css",

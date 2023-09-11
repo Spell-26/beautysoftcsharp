@@ -1,0 +1,59 @@
+﻿.container-cita{
+    width: 100%;
+    display: flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    justify-content: space-evenly;
+}
+.card-cita {
+    width: 21%;
+    padding: 1em 2em;
+    background: rgba(121,9,111,1);
+    color: white;
+    border-radius: 1em;
+    margin: auto;
+    box-shadow: rgba(176, 176, 176, 0.8) 5px 5px 5px;
+    cursor: pointer;
+    transition: width 0.2s ease-in;
+}
+.card-cita:hover {
+        width: 22%;
+        background: linear-gradient(180deg, rgba(121,9,111,1) 0%, rgba(197,92,69,1) 100%);
+        transition: width 0.2s ease-in;
+}
+.datos{
+    margin: 0.5em 0;
+    padding: 0.5em;
+}
+.datos-cita{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.datos-cita li{
+    margin-bottom: 0.5em;
+}
+.card-foot{
+    font-size: 0.8em;
+}
+.card-foot a{
+    padding: 0.4em;
+    margin-right: 0.2em;
+    text-decoration: none;
+    color: white;
+}
+    .card-foot a:hover {
+        background: rgba(172, 172, 172, 0.11);
+        border-radius: 0.4em;
+    }
+.boton-funcional {
+    background: rgba(249, 173, 26, 1);
+    padding: 0.5em;
+    text-decoration: none;
+    color: white;
+    border-radius: 0.5em;
+    box-shadow: rgba(176, 176, 176, 0.8) 2px 2px 5px;
+}
+.container-boton {
+    margin: 1em 0;
+}

@@ -1,0 +1,16 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\beautysoft",
+    "\\beautysoft\\beautysoft",
+    "\\beautysoft\\beautysoft\\Controllers",
+    "\\beautysoft\\beautysoft\\Models",
+    "\\beautysoft\\beautysoft\\Views",
+    "\\beautysoft\\beautysoft\\Views\\Citas",
+    "\\beautysoft\\beautysoft\\Views\\Shared",
+    "\\beautysoft\\beautysoft\\wwwroot",
+    "\\beautysoft\\beautysoft\\wwwroot\\css"
+  ],
+  "SelectedNode": "\\beautysoft\\beautysoft\\beautysoft.csproj",
+  "PreviewInSolutionExplorer": false
+}

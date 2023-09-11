@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace beautysoft.Models;
 
@@ -22,4 +23,13 @@ public partial class Citas
     public virtual Estilistas? IdEstilistaNavigation { get; set; }
 
     public virtual Servicio? IdServicioNavigation { get; set; }
+
+    [NotMapped]
+    public string? ClienteNombre { get; set; }
+    [NotMapped]
+    public string? EstilistaNombre { get; set; }
+    [NotMapped]
+    public string? ServicioNombre { get; set; }
+    [NotMapped]
+    public int? Precio {  get; set; }
 }
