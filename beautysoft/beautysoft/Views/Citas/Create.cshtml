@@ -1,49 +1,73 @@
 ﻿@model beautysoft.Models.Citas
 
 @{
-    ViewData["Title"] = "Create";
+    ViewData["Title"] = "Nueva cita";
 }
 
-<h1>Create</h1>
+<div class="go-back">
+    <a asp-action="Index" data-bs-toggle="tooltip" data-bs-placement="top" title="Volver a citas."><i class="fa-solid fa-arrow-right fa-rotate-180" style="color: #ffffff;"></i></a>
+</div>
+<div id="container">
+    <div class="container-nueva-cita">
 
-<h4>Citas</h4>
-<hr />
-<div class="row">
-    <div class="col-md-4">
-        <form asp-action="Create">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <div class="form-group">
-                <label asp-for="IdCliente" class="control-label"></label>
-                <select asp-for="IdCliente" class ="form-control" asp-items="ViewBag.IdCliente"></select>
-            </div>
-            <div class="form-group">
-                <label asp-for="IdEstilista" class="control-label"></label>
-                <select asp-for="IdEstilista" class ="form-control" asp-items="ViewBag.IdEstilista"></select>
-            </div>
-            <div class="form-group">
-                <label asp-for="IdServicio" class="control-label"></label>
-                <select asp-for="IdServicio" class ="form-control" asp-items="ViewBag.IdServicio"></select>
-            </div>
-            <div class="form-group">
-                <label asp-for="Fecha" class="control-label"></label>
-                <input asp-for="Fecha" class="form-control" />
-                <span asp-validation-for="Fecha" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Hora" class="control-label"></label>
-                <input asp-for="Hora" class="form-control" />
-                <span asp-validation-for="Hora" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-primary" />
-            </div>
-        </form>
+        <div class="titulo">
+            <span>Crear una nueva cita</span>
+        </div>
+        <div class="guia-uso">
+            <p>En esta ventana podrás crear una nueva cita.
+                Para hacerlo sigue los siguientes pasos:</p>
+            <ol>
+                <li>Selecciona el servicio que deseas, la fecha y hora</li>
+                <li>A continuación aparecerá un listado con los estilistas disponibles.</li>
+                <li>Una vez creada tu cita te enviaremos un email en el cual podrás confirmarla, en caso de no hacerlo se cancelará 
+                    tu reserva en las 24 horas siguientes a la creación</li>
+            </ol>
+        </div>
+        <div class="formulario-cita">
+            
+                <form asp-action="Create">
+                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                    <div class="form-group">
+                        <label asp-for="IdCliente" class="control-label"></label>
+                        <select asp-for="IdCliente" class="form-control" asp-items="ViewBag.IdCliente"></select>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="IdEstilista" class="control-label"></label>
+                        <select asp-for="IdEstilista" class="form-control" asp-items="ViewBag.IdEstilista"></select>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="IdServicio" class="control-label"></label>
+                        <select asp-for="IdServicio" class="form-control" asp-items="ViewBag.IdServicio"></select>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Fecha" class="control-label"></label>
+                        <input asp-for="Fecha" class="form-control" />
+                        <span asp-validation-for="Fecha" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Hora" class="control-label"></label>
+                        <input asp-for="Hora" class="form-control" />
+                        <span asp-validation-for="Hora" class="text-danger"></span>
+                    </div>
+                    <div class="enviar">
+                        <input type="submit" value="Agendar"  />
+                    </div>
+                    <span class="bottom-info">
+                    El valor de los servicios y la estimación 
+                    de su duración son solamente aproximaciones, 
+                    estos pueden variar dependiendo de diversas 
+                    situaciones.
+                    </span>
+                </form>
+            
+        </div>
     </div>
 </div>
 
-<div>
-    <a asp-action="Index">Back to List</a>
-</div>
+
+
+
+
 
 @section Scripts {
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}

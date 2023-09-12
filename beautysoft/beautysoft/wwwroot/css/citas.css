@@ -7,6 +7,8 @@
 }
 .card-cita {
     width: 21%;
+    
+    overflow: hidden;
     padding: 1em 2em;
     background: rgba(121,9,111,1);
     color: white;
@@ -56,4 +58,81 @@
 }
 .container-boton {
     margin: 1em 0;
+}
+
+//nueva cita
+#container{
+    width: 100%;
+}
+.container-nueva-cita {
+    width: 50%;
+    margin: 2em auto;
+    background: rgba(220, 220, 220, 0.8);
+    padding: 2.5em;
+    border-radius: 1em;
+}
+.titulo{
+    text-align: center;
+}
+.titulo span{
+    font-size: 1.5em;
+    font-weight: bold;
+}
+.guia-uso {
+    background: rgba(107, 206, 227, 1);
+    margin: 1em auto;
+    border-radius: 2em;
+    font-size: 0.8em;
+    padding: 0.6em;
+    color: rgba(83, 5, 250, 1);
+}
+.guia-uso p, .guia-uso ol{
+    margin:0;
+    padding: 0;
+}
+.guia-uso ol{
+    padding: .8em;
+}
+.formulario-cita{
+    padding: 0 3em;
+}
+
+.form-group{
+    margin-bottom: 1em;
+}
+
+    .form-group label {
+        margin-bottom: 0.2em;
+        font-size: 0.8em;
+        font-weight: bold;
+        color: rgba(113, 113, 113, 0.8);
+    }
+.enviar {
+    text-align: center;
+    margin-bottom: 1em;
+}
+    .enviar input {
+        margin-top: .8em;
+        background: rgb(116,51,127);
+        background: linear-gradient(180deg, rgba(116,51,127,1) 0%, rgba(141,83,157,1) 100%);
+        padding: 0.8em 1.2em;
+        border: none;
+        color: white;
+        font-weight: bold;
+        border-radius: .8em;
+        box-shadow: rgba(176, 176, 176, 0.8) 3px 3px 5px;
+    }
+.go-back{
+    margin: 2.5em 0 0;
+}
+.go-back a{
+    background: purple;
+    padding: .6em 1em;
+    border-radius: .6em;
+}
+.bottom-info {
+    margin-top: 1em;
+    font-size: 0.8em;
+    color: rgba(113, 113, 113, 0.8);
+    justify-content: center;
 }
